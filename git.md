@@ -26,10 +26,8 @@
 | `git remote show <remote>`         | Exibe informações sobre um repositório remoto. Mostra detalhes sobre um repositório remoto, incluindo branches e URLs.| `git remote show origin`                   | Baixo                    |
 | `git stash`                        | Salva as mudanças no stash. Armazena temporariamente as mudanças locais, permitindo alternar para outra branch ou aplicar as alterações posteriormente.| `git stash`                                | Baixo                    |
 | `git stash apply`                  | Aplica as mudanças salvas no stash. Restaura as mudanças previamente armazenadas no stash de volta para o working directory.| `git stash apply`                          | Baixo                    |
-| `git mergetool`                    |
-
- Abre uma ferramenta de merge para resolver conflitos. Facilita a resolução de conflitos de merge usando uma ferramenta gráfica ou de linha de comando.| `git mergetool`                          | Médio                    |
-| `git diff --base <arquivo>`        | Exibe as diferenças entre o ancestral comum e os ramos mesclados. Mostra as diferenças entre o estado atual do arquivo, o último commit e o ancestral comum durante um merge.| `git diff --base arquivo.txt`           | Baixo                    |
+| `git mergetool`                    | Abre uma ferramenta de merge para resolver conflitos. Facilita a resolução de conflitos de merge usando uma ferramenta gráfica ou de linha de comando.| `git mergetool`                          | Médio                    |
+| `git diff --base <arquivo>`        | Exibe as diferenças entre o ancestral comum e os ramos mesclados. Mostra as diferenças entre o estado atual do arquivo, o último commit e o ancestral comum durante um merge.| `git diff --base arquivo.txt`           | Baixo         |
 | `git log --merge`                  | Exibe o histórico de commits com informações sobre merges. Mostra o histórico de commits, destacando aqueles que são merges.| `git log --merge`                   | Baixo                    |
 | `git clean -fd`                    | Remove arquivos não rastreados e diretórios. Limpa o working directory removendo arquivos e diretórios não rastreados.| `git clean -fd`                            | Alto                     |
 | `git tag -a <tag> -m "mensagem"`   | Cria uma tag anotada. Adiciona uma tag anotada ao último commit, marcando pontos importantes na história.| `git tag -a v1.0 -m "Versão 1.0"`         | Médio                    |
@@ -57,9 +55,7 @@
 | `git log --grep="palavra-chave"`   | Filtra commits por mensagem de commit. Exibe commits que contenham a palavra-chave especificada na mensagem.| `git log --grep="bugfix"`                | Baixo                    |
 | `git update-ref -d <branch>`       | Remove uma referência de branch. Deleta uma branch, removendo-a do histórico de referências.| `git update-ref -d feature-antiga`       | Alto                     |
 | `git rev-list HEAD --count`        | Conta o número total de commits na branch HEAD. Retorna o número total de commits na branch HEAD.| `git rev-list HEAD --count`             | Baixo                    |
-| `git instaweb`                     | Inicia um servidor web para visualizar o repositório. Abre uma interface web para navegar pelo repositório.| `git instaweb`                          | Alto                    
-
- |
+| `git instaweb`                     | Inicia um servidor web para visualizar o repositório. Abre uma interface web para navegar pelo repositório.| `git instaweb`                          | Alto                    |
 | `git log --pretty=format:"%h - %an, %ar : %s"` | Formata a saída do log de uma maneira específica. Personaliza o formato de exibição dos commits.| `git log --pretty=format:"%h - %an, %ar : %s"` | Baixo                    |
 | `git archive --format=zip --output=arquivo.zip HEAD` | Cria um arquivo zip contendo o estado do repositório no último commit.| `git archive --format=zip --output=repo.zip HEAD` | Baixo                    |
 | `git show-branch --merge-base <branch1> <branch2>` | Encontra o commit de merge-base entre duas branches. Mostra o commit comum mais recente entre as duas branches.| `git show-branch --merge-base feature1 feature2` | Baixo                    |
